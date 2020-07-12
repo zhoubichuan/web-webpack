@@ -1,0 +1,24 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "zhoubichaun@icloud.com",
+  "hommepage": "https://github.com/zhoubichuan/Web-Docker/",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "src:build": "vuepress build src",
+    "getname": "node utils/getFilenames.js",
+    "deploy": "bash deploy.sh",
+    "gh-pages": "bash deploy_gh-pages.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.4"
+  },
+  "dependencies": {
+    "@hellowuxin/mindmap": "^1.7.3"
+  }
+}
