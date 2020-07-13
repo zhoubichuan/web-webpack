@@ -1,6 +1,6 @@
 module.exports = {
   // 基础配置
-  base: '/webpack/', // 部署站点的基础路径
+  base: '/Web-Webpack/', // 部署站点的基础路径
   description: 'webpack相关知识点',
   locales: {
     // 默认标题
