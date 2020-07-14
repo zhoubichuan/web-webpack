@@ -12,9 +12,10 @@ meta:
 ---
 
 <template>
-  <div id="app">
-    <mindmap v-model="data" height="1000"></mindmap>
-  </div>
+    <div class="cont">
+        <div id="large-header" class="large-header"></div>
+        <mindmap v-model="data" height="1000"></mindmap>
+    </div>
 </template>
 
 <script>
