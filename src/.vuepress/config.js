@@ -115,18 +115,18 @@ module.exports = {
                 text: '1.webpack源码解析',
                 link: '/source/vue/1.preparation'
               },
-              {
-                text: '2.vuex源码解析',
-                link: '/source/vuex'
-              },
-              {
-                text: '3.vue-router源码解析',
-                link: '/source/vue-router'
-              },
-              {
-                text: '4.element源码解析',
-                link: '/source/element/Pagination'
-              },
+              // {
+              //   text: '2.vuex源码解析',
+              //   link: '/source/vuex'
+              // },
+              // {
+              //   text: '3.vue-router源码解析',
+              //   link: '/source/vue-router'
+              // },
+              // {
+              //   text: '4.element源码解析',
+              //   link: '/source/element/Pagination'
+              // },
             ]
           }
         ],
