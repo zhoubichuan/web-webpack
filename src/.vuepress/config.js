@@ -60,7 +60,7 @@ module.exports = {
         nav: [{
             text: '基础知识',
             items: [{
-                text: '1.构建基础篇',
+                text: '1.基础功能',
                 link: '/base/build/1.config'
               },
               {
@@ -84,8 +84,8 @@ module.exports = {
           {
             text: '源码知识',
             items: [{
-                text: '1.vue源码解析',
-                link: '/source/vue/1.preparation'
+                text: '1.webpack源码解析',
+                link: '/source/webpack/1.preparation'
               },
               {
                 text: '2.vuex源码解析',
@@ -107,7 +107,7 @@ module.exports = {
           '/base/function/': ['skill', 'bug', 'webpack', 'vscode', 'test', 'prem', 'i18n'],
           '/senior/use/': ['1.recursionAndDynamics', '2.extend', '3.componentCommunication', '4.render', '5.api', '6.form', '7.checkBox', '8.active', '9.alert', '10.table', '11.tree'],
           '/senior/npm/': [],
-          '/source/vue/': ['1.preparation', '2.dataDriven', '3.componentization', '4.deepResponsePrinciple', '5.compile', '6.extend', '7.vueRouter', '8.vuex'],
+          '/source/webpack/': ['1.preparation', '2.dataDriven', '3.componentization', '4.deepResponsePrinciple', '5.compile', '6.extend', '7.vueRouter', '8.vuex'],
           '/source/element/': ['Pagination', 'Dialog', 'Autocomplete', 'Dropdown',
             'DropdownMenu', 'DropdownItem', 'Menu', 'Submenu', 'MenuItem', 'MenuItemGroup', 'Input', 'InputNumber', 'Radio', 'RadioGroup', 'RadioButton', 'Checkbox', 'CheckboxButton', 'CheckboxGroup',
             'Switch', 'Option', 'OptionGroup', 'Button', 'ButtonGroup', 'Table', 'TableColumn', 'DatePicker', 'TimeSelect', 'TimePicker', 'Popover', 'Tooltip', 'Breadcrumb', 'BreadcrumbItem',
