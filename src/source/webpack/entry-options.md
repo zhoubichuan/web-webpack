@@ -7,5 +7,4 @@ meta:
   - name: keywords
     content: vuepress,最新技术文档,vuepress语法,markdown语法
 ---
-
-# 一、准备工作
+# webpack初始化
