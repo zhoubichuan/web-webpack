@@ -88,7 +88,7 @@ module.exports = {
         nav: [{
             text: '基础知识',
             items: [{
-                text: '1.构建基础篇',
+                text: '1.基础功能',
                 link: '/base/build/1.config'
               },
               {
