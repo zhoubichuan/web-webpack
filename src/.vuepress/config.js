@@ -86,64 +86,118 @@ module.exports = {
         editLinkText: '在github上编辑此页',
         lastUpdated: '上次更新', // 获取每个文件最后一次 git 提交的时间戳
         nav: [{
-            text: '基础知识',
-            items: [{
-                text: '1.基础功能',
-                link: '/base/build/1.config'
-              },
-              {
-                text: '2.项目功能点',
-                link: '/base/function/skill',
-              }
-            ]
+          text: '基础知识',
+          items: [{
+            text: '一.基础功能',
+            link: '/base/build/1.config'
           },
           {
-            text: '高级知识',
-            items: [{
-                text: '1.组件精讲',
-                link: '/senior/use/1.recursionAndDynamics'
-              },
-              {
-                text: '2.TypeScript',
-                link: '/senior/typeScript'
-              },
-            ]
+            text: '二.配置开发服务器',
+            link: '/base/devserver/skill',
           },
           {
-            text: '源码知识',
-            items: [{
-                text: '一.webpack源码解析',
-                link: '/source/webpack/inde'
-              },
-              // {
-              //   text: '2.vuex源码解析',
-              //   link: '/source/vuex'
-              // },
-              // {
-              //   text: '3.vue-router源码解析',
-              //   link: '/source/vue-router'
-              // },
-              {
-                text: '二.loader源码解析',
-                link: '/source/loader/Pagination'
-              },
-            ]
+            text: '三.扩展插件',
+            link: '/base/plugin/skill',
+          },
+          {
+            text: '四.模块转换器',
+            link: '/base/loader/skill',
           }
+          ]
+        },
+        {
+          text: '高级知识',
+          items: [{
+            text: '1.组件精讲',
+            link: '/senior/use/1.recursionAndDynamics'
+          },
+          {
+            text: '2.TypeScript',
+            link: '/senior/typeScript'
+          },
+          ]
+        },
+        {
+          text: '源码知识',
+          items: [{
+            text: '一.webpack源码解析',
+            link: '/source/webpack/inde'
+          },
+          {
+            text: '二.loader源码解析',
+            link: '/source/loader/Pagination'
+          },
+          ]
+        }
         ],
         sidebar: {
-          '/base/build/': ['1.config', '2.webpack', '3.file', '4.single', '5.page', '7.module', '8.project', '9.utils', '10.ui', '11.data', '12.skill', '13.com', '14.data', '15.api'],
-          '/base/function/': ['skill', 'bug', 'webpack', 'vscode', 'test', 'prem', 'i18n'],
-          '/senior/use/': ['1.recursionAndDynamics', '2.extend', '3.componentCommunication', '4.render', '5.api', '6.form', '7.checkBox', '8.active', '9.alert', '10.table', '11.tree'],
+          '/base/build/': [
+            '1.config', 
+            '2.webpack', 
+            '3.file', 
+            '4.single', 
+            '5.page', 
+            '7.module', 
+            '8.project', 
+            '9.utils', 
+            '10.ui', 
+            '11.data', 
+            '12.skill', 
+            '13.com', 
+            '14.data', 
+            '15.api'
+          ],
+          '/base/devserver/': [
+            'skill', 
+            'bug', 
+            'webpack', 
+            'vscode', 
+            'test', 
+            'prem', 
+            'i18n'
+          ],
+          '/base/plugin/': [
+            'skill', 
+            'bug', 
+            'webpack', 
+            'vscode', 
+            'test', 
+            'prem', 
+            'i18n'
+          ],
+          '/base/loader/': [
+            'skill', 
+            'bug', 
+            'webpack', 
+            'vscode', 
+            'test', 
+            'prem', 
+            'i18n'
+          ],
+          '/senior/use/': [
+            '1.recursionAndDynamics', 
+            '2.extend', 
+            '3.componentCommunication', 
+            '4.render', 
+            '5.api', 
+            '6.form', 
+            '7.checkBox', 
+            '8.active', 
+            '9.alert', 
+            '10.table', 
+            '11.tree'
+          ],
           '/senior/npm/': [],
           '/source/webpack/': [
             'inde',
-            '2.dataDriven',
-            '3.componentization',
-            '4.deepResponsePrinciple',
-            '5.compile',
-            '6.extend',
-            '7.vueRouter',
-            '8.vuex'
+            '1.file',
+            '2.tapable',
+            '3.ast',
+            '4.source',
+            '5.loader',
+            '6.plugin',
+            '7.hand',
+            '8.prepare'
           ],
           '/source/loader/': [
             'Pagination',
