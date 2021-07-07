@@ -89,18 +89,18 @@ module.exports = {
           text: '基础知识',
           items: [{
             text: '一.基础功能',
-            link: '/base/build/1.config'
+            link: '/base/use/1.introduction'
           },
           {
             text: '二.配置开发服务器',
             link: '/base/devserver/skill',
           },
           {
-            text: '三.扩展插件',
+            text: '三.配置plugin',
             link: '/base/plugin/skill',
           },
           {
-            text: '四.模块转换器',
+            text: '四.配置loader',
             link: '/base/loader/skill',
           }
           ]
@@ -108,12 +108,12 @@ module.exports = {
         {
           text: '高级知识',
           items: [{
-            text: '1.组件精讲',
-            link: '/senior/use/1.recursionAndDynamics'
+            text: '1.loader的实现',
+            link: '/senior/loader/1.recursionAndDynamics'
           },
           {
-            text: '2.TypeScript',
-            link: '/senior/typeScript'
+            text: '2.plugin的实现',
+            link: '/senior/plugin/1.recursionAndDynamics'
           },
           ]
         },
@@ -131,21 +131,18 @@ module.exports = {
         }
         ],
         sidebar: {
-          '/base/build/': [
-            '1.config', 
-            '2.webpack', 
-            '3.file', 
-            '4.single', 
-            '5.page', 
-            '7.module', 
-            '8.project', 
-            '9.utils', 
-            '10.ui', 
-            '11.data', 
-            '12.skill', 
-            '13.com', 
-            '14.data', 
-            '15.api'
+          '/base/use/': [
+            '1.introduction', 
+            '2.route', 
+            '3.devenv', 
+            '4.devserver', 
+            '5.envconfig', 
+            '6.loaderconfig', 
+            '7.pluginconfig', 
+            '8.workflow', 
+            '9.constructionspeed', 
+            '10.devspeed', 
+            '11.optimization'
           ],
           '/base/devserver/': [
             'skill', 
@@ -187,7 +184,9 @@ module.exports = {
             '10.table', 
             '11.tree'
           ],
-          '/senior/npm/': [],
+          '/senior/npm/': [
+            '1.recursionAndDynamics'
+          ],
           '/source/webpack/': [
             'inde',
             '1.file',
