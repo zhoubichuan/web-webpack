@@ -108,11 +108,11 @@ module.exports = {
         {
           text: '高级知识',
           items: [{
-            text: '1.loader的实现',
+            text: '一.loader的实现',
             link: '/senior/loader/1.recursionAndDynamics'
           },
           {
-            text: '2.plugin的实现',
+            text: '二.plugin的实现',
             link: '/senior/plugin/1.recursionAndDynamics'
           },
           ]
