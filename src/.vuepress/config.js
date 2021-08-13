@@ -1,7 +1,7 @@
 module.exports = {
   // 基础配置
   base: '/Web-Webpack/', // 部署站点的基础路径
-  description: 'webpack相关知识点',
+  description: '山不厌高，海不厌深',
   plugins: {
     // 名称：@vuepress/plugin-pwa 网页内容有更新的时候有刷新按钮。可以把网页保存到桌面，当一个app一样
     '@vuepress/pwa': {
@@ -109,11 +109,11 @@ module.exports = {
           text: '高级知识',
           items: [{
             text: '一.loader的实现',
-            link: '/senior/loader/1.recursionAndDynamics'
+            link: '/senior/loader/1.index'
           },
           {
             text: '二.plugin的实现',
-            link: '/senior/plugin/1.recursionAndDynamics'
+            link: '/senior/plugin/1.index'
           },
           ]
         },
@@ -132,60 +132,60 @@ module.exports = {
         ],
         sidebar: {
           '/base/use/': [
-            '1.introduction', 
-            '2.route', 
-            '3.devenv', 
-            '4.devserver', 
-            '5.envconfig', 
-            '6.loaderconfig', 
-            '7.pluginconfig', 
-            '8.workflow', 
-            '9.constructionspeed', 
-            '10.devspeed', 
+            '1.introduction',
+            '2.route',
+            '3.devenv',
+            '4.devserver',
+            '5.envconfig',
+            '6.loaderconfig',
+            '7.pluginconfig',
+            '8.workflow',
+            '9.constructionspeed',
+            '10.devspeed',
             '11.optimization'
           ],
           '/base/devserver/': [
-            'skill', 
-            'bug', 
-            'webpack', 
-            'vscode', 
-            'test', 
-            'prem', 
+            'skill',
+            'bug',
+            'webpack',
+            'vscode',
+            'test',
+            'prem',
             'i18n'
           ],
           '/base/plugin/': [
-            'skill', 
-            'bug', 
-            'webpack', 
-            'vscode', 
-            'test', 
-            'prem', 
+            'skill',
+            'bug',
+            'webpack',
+            'vscode',
+            'test',
+            'prem',
             'i18n'
           ],
           '/base/loader/': [
-            'skill', 
-            'bug', 
-            'webpack', 
-            'vscode', 
-            'test', 
-            'prem', 
+            'skill',
+            'bug',
+            'webpack',
+            'vscode',
+            'test',
+            'prem',
             'i18n'
           ],
-          '/senior/use/': [
-            '1.recursionAndDynamics', 
-            '2.extend', 
-            '3.componentCommunication', 
-            '4.render', 
-            '5.api', 
-            '6.form', 
-            '7.checkBox', 
-            '8.active', 
-            '9.alert', 
-            '10.table', 
-            '11.tree'
+          '/senior/loader/': [
+            '1.index'
           ],
-          '/senior/npm/': [
-            '1.recursionAndDynamics'
+          '/senior/plugin/': [
+            '1.index',
+            '2.extend',
+            '3.componentCommunication',
+            '4.render',
+            '5.api',
+            '6.form',
+            '7.checkBox',
+            '8.active',
+            '9.alert',
+            '10.table',
+            '11.tree'
           ],
           '/source/webpack/': [
             'inde',
