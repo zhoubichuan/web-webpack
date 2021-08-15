@@ -19,6 +19,5 @@
     "@vuepress/plugin-pwa": "^1.8.2",
     "vuepress": "^0.14.4",
     "vuepress-plugin-boxx": "0.0.7"
-  },
-  "dependencies": {}
+  }
 }
