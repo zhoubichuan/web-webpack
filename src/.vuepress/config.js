@@ -89,19 +89,31 @@ module.exports = {
           text: '基础知识',
           items: [{
             text: '一.基础功能',
-            link: '/base/use/1.introduction'
+            link: '/base/use/1.index'
           },
           {
-            text: '二.配置开发服务器',
-            link: '/base/devserver/skill',
+            text: '二.webpack配置',
+            link: '/base/config/1.打包多页应用',
           },
           {
             text: '三.配置plugin',
-            link: '/base/plugin/skill',
+            link: '/base/plugin/1.introduce',
           },
           {
             text: '四.配置loader',
-            link: '/base/loader/skill',
+            link: '/base/loader/1.index',
+          },
+          {
+            text: '五.优化',
+            link: '/base/perform/1.noParse',
+          },
+          {
+            text: '六.tapable',
+            link: '/base/tapable/1.SyncHook介绍',
+          },
+          {
+            text: '七.write',
+            link: '/base/write/1.writeByHand',
           }
           ]
         },
@@ -132,7 +144,7 @@ module.exports = {
         ],
         sidebar: {
           '/base/use/': [
-            '1.introduction',
+            '1.index',
             '2.route',
             '3.devenv',
             '4.devserver',
@@ -144,32 +156,58 @@ module.exports = {
             '10.devspeed',
             '11.optimization'
           ],
-          '/base/devserver/': [
-            'skill',
-            'bug',
-            'webpack',
-            'vscode',
-            'test',
-            'prem',
-            'i18n'
+          '/base/config/': [
+            '1.打包多页应用',
+            '2.sourceMap',
+            '3.watch的用法',
+            '4.小插件应用',
+            '5.webpack跨域问题',
+            '6.resolve属性的配置',
+            '7.定义环境变量',
+            '8.区分不同环境'
           ],
           '/base/plugin/': [
-            'skill',
-            'bug',
-            'webpack',
-            'vscode',
-            'test',
-            'prem',
-            'i18n'
+            '1.introduce',
+            '2.plugin',
+            '3.document',
+            '4.inline',
+            '5.auto'
+          ],
+          '/base/perform/': [
+            '1.noParse',
+            '2.lgnorePlugin',
+            '3.dllPlugin',
+            '4.happypack',
+            '5.webpack自带优化',
+            '6.抽离公共代码',
+            '7.懒加载',
+            '8.热更新'
+          ],
+          '/base/tapable/': [
+            '1.SyncHook介绍',
+            '2.Sync...Hook',
+            '3.AsyncParallelHook',
+            '4.AsyncSeriesHook',
+            '5.AsyncSeriesWaterfall'
+          ],
+          '/base/write/': [
+            '1.writeByHand',
+            '2.analyse',
+            '3.relation',
+            '4.ast',
+            '5.build',
+            '6.loader',
+            '7.plugins'
           ],
           '/base/loader/': [
-            'skill',
-            'bug',
-            'webpack',
-            'vscode',
-            'test',
-            'prem',
-            'i18n'
+            '1.index',
+            '1.loader',
+            '2.deploy',
+            '3.babel',
+            '4.banner',
+            '5.file-url',
+            '6.less-css',
+            '7.css'
           ],
           '/senior/loader/': [
             '1.index'
