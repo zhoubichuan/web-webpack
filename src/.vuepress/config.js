@@ -104,17 +104,9 @@ module.exports = {
             link: '/base/loader/1.index',
           },
           {
-            text: '五.优化',
+            text: '五.webpack优化方式',
             link: '/base/perform/1.noParse',
           },
-          {
-            text: '六.tapable',
-            link: '/base/tapable/1.SyncHook介绍',
-          },
-          {
-            text: '七.write',
-            link: '/base/write/1.writeByHand',
-          }
           ]
         },
         {
@@ -127,6 +119,14 @@ module.exports = {
             text: '二.plugin的实现',
             link: '/senior/plugin/1.index'
           },
+          {
+            text: '三.tapable的实现',
+            link: '/senior/tapable/1.index',
+          },
+          {
+            text: '四.webpack简易实现',
+            link: '/senior/write/1.writeByHand',
+          }
           ]
         },
         {
@@ -183,22 +183,6 @@ module.exports = {
             '7.懒加载',
             '8.热更新'
           ],
-          '/base/tapable/': [
-            '1.SyncHook介绍',
-            '2.Sync...Hook',
-            '3.AsyncParallelHook',
-            '4.AsyncSeriesHook',
-            '5.AsyncSeriesWaterfall'
-          ],
-          '/base/write/': [
-            '1.writeByHand',
-            '2.analyse',
-            '3.relation',
-            '4.ast',
-            '5.build',
-            '6.loader',
-            '7.plugins'
-          ],
           '/base/loader/': [
             '1.index',
             '1.loader',
@@ -224,6 +208,27 @@ module.exports = {
             '9.alert',
             '10.table',
             '11.tree'
+          ],
+          '/senior/tapable/': [
+            '1.index',
+            '2.SyncHook',
+            '3.SyncBailHook',
+            '4.SyncWaterfallHook',
+            '5.SyncLoopHook',
+            '6.AsyncParallelHook',
+            '7.AsyncParallelBailHook',
+            '8.AsyncSeriesHook',
+            '9.AsyncSeriesBailHook',
+            '10.AsyncSeriesWaterfallHook'
+          ],
+          '/senior/write/': [
+            '1.writeByHand',
+            '2.analyse',
+            '3.relation',
+            '4.ast',
+            '5.build',
+            '6.loader',
+            '7.plugins'
           ],
           '/source/webpack/': [
             'inde',
