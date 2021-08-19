@@ -104,7 +104,7 @@ module.exports = {
             link: '/base/loader/1.index',
           },
           {
-            text: '五.webpack优化方式',
+            text: '五.性能优化',
             link: '/base/perform/1.noParse',
           },
           ]
