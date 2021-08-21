@@ -153,8 +153,7 @@ module.exports = {
             '6.loaderconfig',
             '7.pluginconfig',
             '8.workflow',
-            '9.constructionspeed',
-            '10.打包文件分类',
+            '9.constructionspeed'
           ],
           '/base/config/': [
             '1.打包多页应用',
