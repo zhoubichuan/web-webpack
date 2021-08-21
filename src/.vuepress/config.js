@@ -145,6 +145,7 @@ module.exports = {
         sidebar: {
           '/base/use/': [
             '1.index',
+            '2.build',
             '2.route',
             '3.devenv',
             '4.devserver',
@@ -153,8 +154,7 @@ module.exports = {
             '7.pluginconfig',
             '8.workflow',
             '9.constructionspeed',
-            '10.devspeed',
-            '11.optimization'
+            '10.打包文件分类',
           ],
           '/base/config/': [
             '1.打包多页应用',
@@ -181,7 +181,9 @@ module.exports = {
             '5.webpack自带优化',
             '6.抽离公共代码',
             '7.懒加载',
-            '8.热更新'
+            '8.热更新',
+            '9.热模块替换',
+            '11.optimization'
           ],
           '/base/loader/': [
             '1.index',
