@@ -16,20 +16,16 @@ meta:
     <div id="large-header" class="large-header"></div>
     <div class="features">
       <div class="feature">
-        <h2>Webpack前端工程化</h2> 
-        <p>掌握Webpack组件间的多种通信方式及数据同步 渲染函数及jsx高阶应用 Webpack-cli3、Webpackx、Webpack-router进阶之JWT认证</p>
+        <h2>Webpack基础知识</h2> 
+        <p>掌握Webpack基础功能、常见配置、对plugin和loader的了解、相关性能优化配置</p>
       </div>
       <div class="feature">
-        <h2>Webpack插件开发</h2> 
-        <p>插件设计思路，组件编写工作流搭建 从0编写复杂组件之异步级联组件 单元测试编写及组件的发布</p>
+        <h2>Webpack高级知识</h2> 
+        <p>掌握Webpack基础原理，深层次理解loader、plugin、tapable原理，能实现一个简易的webpack</p>
       </div>`
       <div class="feature">
-        <h2>Webpack源码实现</h2> 
-        <p>Webpack权限菜单及按钮权限 Webpack-router、Webpack源码实现 Webpack原理剖析</p>
-      </div>
-      <div class="feature">
-        <h2>Webpack优化和服务器布署</h2> 
-        <p>Webpack优化预渲染、骨架屏、Nuxt.js服务端渲染 使用typescript构建Webpack应用 Docker + nginx实现Webpack的布署和持续集成</p>
+        <h2>Webpack源码知识</h2> 
+        <p>深入解析Webpack-cli、以及Webpack原理</p>
       </div>
     </div>
   </div>

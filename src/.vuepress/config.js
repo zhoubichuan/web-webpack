@@ -89,23 +89,23 @@ module.exports = {
           text: '基础知识',
           items: [{
             text: '一.基础功能',
-            link: '/base/use/1.index'
+            link: '/base/function/1.index'
           },
           {
-            text: '二.webpack配置',
+            text: '二.常见配置',
             link: '/base/config/1.打包多页应用',
           },
           {
-            text: '三.配置plugin',
-            link: '/base/plugin/1.introduce',
+            text: '三.plugin',
+            link: '/base/plugin/1.index',
           },
           {
-            text: '四.配置loader',
+            text: '四.loader',
             link: '/base/loader/1.index',
           },
           {
             text: '五.性能优化',
-            link: '/base/perform/1.noParse',
+            link: '/base/optimize/1.noParse',
           },
           ]
         },
@@ -134,16 +134,12 @@ module.exports = {
           items: [{
             text: '一.webpack源码解析',
             link: '/source/webpack/1.index'
-          },
-          {
-            text: '二.loader源码解析',
-            link: '/source/loader/Pagination'
-          },
+          }
           ]
         }
         ],
         sidebar: {
-          '/base/use/': [
+          '/base/function/': [
             '1.index',
             '2.build',
             '2.route',
@@ -167,23 +163,11 @@ module.exports = {
             '8.区分不同环境'
           ],
           '/base/plugin/': [
-            '1.introduce',
+            '1.index',
             '2.plugin',
             '3.document',
             '4.inline',
             '5.auto'
-          ],
-          '/base/perform/': [
-            '1.noParse',
-            '2.lgnorePlugin',
-            '3.dllPlugin',
-            '4.happypack',
-            '5.webpack自带优化',
-            '6.抽离公共代码',
-            '7.懒加载',
-            '8.热更新',
-            '9.热模块替换',
-            '11.optimization'
           ],
           '/base/loader/': [
             '1.index',
@@ -194,6 +178,18 @@ module.exports = {
             '5.file-url',
             '6.less-css',
             '7.css'
+          ],
+          '/base/optimize/': [
+            '1.noParse',
+            '2.lgnorePlugin',
+            '3.dllPlugin',
+            '4.happypack',
+            '5.webpack自带优化',
+            '6.抽离公共代码',
+            '7.懒加载',
+            '8.热更新',
+            '9.热模块替换',
+            '11.optimization'
           ],
           '/senior/loader/': [
             '1.index'
@@ -242,87 +238,7 @@ module.exports = {
             '6.plugin',
             '7.hand',
             '8.prepare'
-          ],
-          '/source/loader/': [
-            'Pagination',
-            'Dialog',
-            'Autocomplete',
-            'Dropdown',
-            'DropdownMenu',
-            'DropdownItem',
-            'Menu',
-            'Submenu',
-            'MenuItem',
-            'MenuItemGroup',
-            'Input',
-            'InputNumber',
-            'Radio',
-            'RadioGroup',
-            'RadioButton',
-            'Checkbox',
-            'CheckboxButton',
-            'CheckboxGroup',
-            'Switch',
-            'Option',
-            'OptionGroup',
-            'Button',
-            'ButtonGroup',
-            'Table',
-            'TableColumn',
-            'DatePicker',
-            'TimeSelect',
-            'TimePicker',
-            'Popover',
-            'Tooltip',
-            'Breadcrumb',
-            'BreadcrumbItem',
-            'Form',
-            'FormItem',
-            'Tabs',
-            'TabPane',
-            'Tag',
-            'Tree',
-            'Alert',
-            'Slider',
-            'Icon',
-            'Row',
-            'Col',
-            'Upload',
-            'Progress',
-            'Spinner',
-            'Badge',
-            'Card',
-            'Rate',
-            'Steps',
-            'Step',
-            'Carousel',
-            'Scrollbar',
-            'CarouselItem',
-            'Collapse',
-            'CollapseItem',
-            'Cascader',
-            'ColorPicker',
-            'Transfer',
-            'Container',
-            'Header',
-            'Aside',
-            'Main',
-            'Footer',
-            'Timeline',
-            'TimelineItem',
-            'Link',
-            'Divider',
-            'Image',
-            'Calendar',
-            'Backtop',
-            'PageHeader',
-            'CascaderPanel',
-            'Avatar',
-            'Drawer',
-            'Popconfirm',
-            'CollapseTransition',
-            'MessageBox'
-          ],
+          ]
         }
       }
     }
