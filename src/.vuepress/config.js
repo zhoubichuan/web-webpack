@@ -151,9 +151,10 @@ module.exports = {
             '4.devserver',
             '5.envconfig',
             '6.loaderconfig',
+            '7.处理js语法及校验',
             '7.pluginconfig',
-            '8.workflow',
-            '9.constructionspeed'
+            '8.全局变量引入问题',
+            '8.workflow'
           ],
           '/base/config/': [
             '1.打包多页应用',
