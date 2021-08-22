@@ -133,7 +133,7 @@ module.exports = {
           text: '源码知识',
           items: [{
             text: '一.webpack源码解析',
-            link: '/source/webpack/inde'
+            link: '/source/webpack/1.index'
           },
           {
             text: '二.loader源码解析',
