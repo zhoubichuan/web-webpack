@@ -229,7 +229,7 @@ module.exports = {
             '7.plugins'
           ],
           '/source/webpack/': [
-            'inde',
+            '1.index',
             '1.file',
             '2.tapable',
             '3.ast',
