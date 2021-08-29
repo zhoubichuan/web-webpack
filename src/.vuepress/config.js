@@ -230,14 +230,19 @@ module.exports = {
           ],
           '/source/webpack/': [
             '1.index',
-            '1.file',
-            '2.tapable',
-            '3.ast',
-            '4.source',
-            '5.loader',
-            '6.plugin',
-            '7.hand',
-            '8.prepare'
+            '1.webpack',
+            '2.options',
+            '3.compiler',
+            '4.plugin',
+            '5.compiler对象',
+            '6.run',
+            '7.compile',
+            '8.compilation',
+            '9.make',
+            '10._addModuleChain',
+            '11.seal',
+            '12.chunk',
+            '13.onCompiled'
           ]
         }
       }
