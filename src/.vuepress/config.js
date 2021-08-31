@@ -1,6 +1,6 @@
 module.exports = {
   // 基础配置
-  base: '/Web-Webpack/', // 部署站点的基础路径
+  base: '/web-webpack/', // 部署站点的基础路径
   description: '山不厌高，海不厌深',
   plugins: {
     // 名称：@vuepress/plugin-pwa 网页内容有更新的时候有刷新按钮。可以把网页保存到桌面，当一个app一样

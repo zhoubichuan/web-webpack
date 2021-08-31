@@ -11,8 +11,8 @@ git init
 git checkout --orphan gh-pages
 git add .
 git commit -m 'gh-pages'
-git remote add origin https://github.com/zhoubichuan/Web-Webpack.git
-git push -f origin gh-pages
+git remote add gitee https://github.com/zhoubichuan/web-webpack.git
+git push -f gitee gh-pages
 
 # 4.返回初始目录
 cd -
