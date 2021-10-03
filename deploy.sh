@@ -5,21 +5,21 @@ git pull github master
 git push github master
 
 # 2.打包
-npm run src:build
+# npm run src:build
 
-# 3.进入打包目录
-cd dist
+# # 3.进入打包目录
+# cd dist
 
-# 4.发布到gh-pages分支
-git init
-git checkout --orphan gh-pages
-git add .
-git commit -m 'gh-pages'
-git remote add gitee https://gitee.com/zhoubichuan/web-webpack.git
-git push -f gitee gh-pages
+# # 4.发布到gh-pages分支
+# git init
+# git checkout --orphan gh-pages
+# git add .
+# git commit -m 'gh-pages'
+# git remote add gitee https://gitee.com/zhoubichuan/web-webpack.git
+# git push -f gitee gh-pages
 
-# 5.返回初始目录
-cd -
+# # 5.返回初始目录
+# cd -
 
 # 2.打包
 npm run src:build
