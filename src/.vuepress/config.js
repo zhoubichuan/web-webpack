@@ -1,18 +1,15 @@
 module.exports = {
-  // 基础配置
-  base: '/web-webpack/', // 部署站点的基础路径
+  base: '/web-webpack/',
+  title: 'webpack笔记',
   description: '有空的时候给自己设定一个小目标',
   plugins: {
-    // 名称：@vuepress/plugin-pwa 网页内容有更新的时候有刷新按钮。可以把网页保存到桌面，当一个app一样
     '@vuepress/pwa': {
       serviceWorker: true,
       updatePopup: true
     },
-    // 名称：@vuepress/plugin-back-to-top 效果：文章看到下面的时候，点击一个图标会回到顶部
     '@vuepress/back-to-top': true,
     '@vuepress/medium-zoom': true,
     '@vuepress/nprogress': true,
-    // 名称：@vuepress/plugin-active-header-links 效果：页面滚动时自动激活侧边栏链接的插件，效果就是右边内容滚动的时候，看到哪里了，左侧菜单会自动高亮显示当前看的目录。
     '@vuepress/active-header-links': {
       sidebarLinkSelector: '.sidebar-link',
       headerAnchorSelector: '.header-anchor'
@@ -29,52 +26,12 @@ module.exports = {
     },
     "vuepress-plugin-boxx": ["vuepress-plugin-boxx"]
   },
-  locales: {
-    // 默认标题
-    '/': {
-      title: 'webpack笔记',
-      description: ''
-    }
-  },
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
-  head: [
-    // 添加链接 pwa 的 manifest 如果需要
-    [
-      'link',
-      {
-        rel: 'icon',
-        href: ''
-      }
-    ],
-    [
-      'meta',
-      {
-        name: 'apple-mobile-web-app-capable',
-        content: 'yes'
-      }
-    ],
-    [
-      'meta',
-      {
-        name: 'apple-mobile-web-app-status-bar-style',
-        content: 'black'
-      }
-    ],
-    [
-      'meta',
-      {
-        name: 'msapplication-TileColor',
-        content: '#000000'
-      }
-    ]
-  ],
   port: 3009,
   dest: 'dist', // 指定 vuepress build 的输出目录
   serviceWorker: true, // pwa
-
-  // 主题配置
   themeConfig: {
     editLinks: true,
     docsDir: 'src', // 假如文档不是放在仓库的根目录下
