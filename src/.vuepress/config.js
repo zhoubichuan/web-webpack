@@ -52,11 +52,11 @@ module.exports = {
             link: '/base/config/1.打包多页应用',
           },
           {
-            text: '三.plugin',
+            text: '三.plugin使用',
             link: '/base/plugin/1.index',
           },
           {
-            text: '四.loader',
+            text: '四.loader使用',
             link: '/base/loader/1.index',
           },
           {
@@ -68,15 +68,15 @@ module.exports = {
         {
           text: '高级知识',
           items: [{
-            text: '一.loader的实现',
+            text: '一.loader实现',
             link: '/senior/loader/1.index'
           },
           {
-            text: '二.plugin的实现',
+            text: '二.plugin实现',
             link: '/senior/plugin/1.index'
           },
           {
-            text: '三.tapable的实现',
+            text: '三.tapable实现',
             link: '/senior/tapable/1.index',
           },
           {
