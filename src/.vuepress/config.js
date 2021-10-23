@@ -190,7 +190,7 @@ module.exports = {
             '2.options',
             '3.compiler',
             '4.plugin',
-            '5.compiler对象',
+            '5.compiler',
             '6.run',
             '7.compile',
             '8.compilation',
