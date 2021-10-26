@@ -106,7 +106,6 @@ module.exports = {
             '7.处理js语法及校验',
             '7.pluginconfig',
             '8.全局变量引入问题',
-            '8.workflow'
           ],
           '/base/config/': [
             '1.打包多页应用',
