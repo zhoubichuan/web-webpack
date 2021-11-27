@@ -1,7 +1,7 @@
 module.exports = {
   base: '/web-webpack/',
   title: 'webpack笔记',
-  description: '有空的时候给自己设定一个小目标',
+  description: '择一事终一生,不为繁华易匠心',
   plugins: {
     '@vuepress/pwa': {
       serviceWorker: true,
