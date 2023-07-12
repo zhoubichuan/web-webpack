@@ -13,7 +13,7 @@
     "src:build": "vuepress build src",
     "deploy": "bash deploy.sh",
     "github": "bash github.sh",
-    "gitee": "bash gitee.sh"
+    "gitee": "bash gitee.sh",
   },
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.8.2",

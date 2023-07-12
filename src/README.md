@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 home: true
-heroImage: ""
+heroImage: ./home.png
 actionText: 先睹为快 →
 actionLink: /base/function/1.index
 pageClass: page_index
