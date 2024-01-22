@@ -1,5 +1,5 @@
 {
-  "name": "interview",
+  "name": "web-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,9 +11,11 @@
     "dev": "vuepress dev src",
     "build": "vuepress build src",
     "src:build": "vuepress build src",
+    "build:comps": "gulp",
+    "publish": "npm run build:comps && cd lib && npm publish",
     "deploy": "bash deploy.sh",
     "github": "bash github.sh",
-    "gitee": "bash gitee.sh",
+    "gitee": "bash gitee.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.8.2",
@@ -22,7 +24,21 @@
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-boxx": "0.0.7"
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.3.7",
+    "less-loader": "^4.1.0",
+    "vue": "^2.5.16",
+    "vuepress-plugin-boxx": "0.0.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-uglify": "^3.0.2",
+    "less": "^3.0.2",
+    "node-sass": "4.14.1",
+    "sass-loader": "7.3.1"
+  },
+  "dependencies": {
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
