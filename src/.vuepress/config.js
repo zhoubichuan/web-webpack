@@ -1,206 +1,167 @@
+const path = require("path");
+const httpRequest = require("./public/mock/http.js");
+const Webpack = require("webpack");
+const bodyParser = require("body-parser");
+
 module.exports = {
-  base: '/web-webpack/',
-  title: 'webpack笔记',
-  description: '择一事终一生,不为繁华易匠心',
-  plugins: {
-    '@vuepress/pwa': {
-      serviceWorker: true,
-      updatePopup: true
-    },
-    '@vuepress/back-to-top': true,
-    '@vuepress/medium-zoom': true,
-    '@vuepress/nprogress': true,
-    '@vuepress/active-header-links': {
-      sidebarLinkSelector: '.sidebar-link',
-      headerAnchorSelector: '.header-anchor'
-    },
-    "@vssue/vuepress-plugin-vssue": {
-      platform: 'github', //v3的platform是github，v4的是github-v4
-      locale: 'zh', //语言
-      // 其他的 Vssue 配置
-      owner: 'zhoubichuan', //github账户名
-      repo: 'web-webpack', //github一个项目的名称
-      clientId: 'Iv1.2923ba5d4de48a3c', //注册的Client ID
-      clientSecret: '110210', //注册的Client Secret
-      autoCreateIssue: true // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
-    },
-    "vuepress-plugin-boxx": ["vuepress-plugin-boxx"]
-  },
-  markdown: {
-    lineNumbers: true // 代码块显示行号
-  },
+  title: "Webpack学习笔记",
+  description: "择一事终一生,不为繁华易匠心",
+  base: "/web-webpack/", // 部署站点的基础路径
   port: 3009,
-  dest: 'web-webpack', // 指定 vuepress build 的输出目录
-  serviceWorker: true, // pwa
-  themeConfig: {
-    editLinks: true,
-    docsDir: 'src', // 假如文档不是放在仓库的根目录下
-    locales: {
-      '/': {
-        docsBranch: 'master', // 假如文档放在一个特定的分支下
-        editLinks: true, // 启用编辑
-        editLinkText: '在github上编辑此页',
-        lastUpdated: '上次更新', // 获取每个文件最后一次 git 提交的时间戳
-        nav: [{
-          text: '基础知识',
-          items: [{
-            text: '一.基础功能',
-            link: '/base/function/1.index'
-          },
-          {
-            text: '二.常见配置',
-            link: '/base/config/1.打包多页应用',
-          },
-          {
-            text: '三.plugin使用',
-            link: '/base/plugin/1.index',
-          },
-          {
-            text: '四.loader使用',
-            link: '/base/loader/1.index',
-          },
-          {
-            text: '五.性能优化',
-            link: '/base/optimize/1.noParse',
-          },
-          ]
-        },
-        {
-          text: '高级知识',
-          items: [{
-            text: '一.loader实现',
-            link: '/senior/loader/1.index'
-          },
-          {
-            text: '二.plugin实现',
-            link: '/senior/plugin/1.index'
-          },
-          {
-            text: '三.tapable实现',
-            link: '/senior/tapable/1.index',
-          },
-          {
-            text: '四.webpack简易实现',
-            link: '/senior/write/1.writeByHand',
-          }
-          ]
-        },
-        {
-          text: '源码知识',
-          items: [{
-            text: '一.webpack源码解析',
-            link: '/source/webpack/1.index'
-          }
-          ]
-        }
-        ],
-        sidebar: {
-          '/base/function/': [
-            '1.index',
-            '2.build',
-            '2.route',
-            '3.devenv',
-            '4.devserver',
-            '5.envconfig',
-            '6.loaderconfig',
-            '7.处理js语法及校验',
-            '7.pluginconfig',
-            '8.全局变量引入问题',
-          ],
-          '/base/config/': [
-            '1.打包多页应用',
-            '2.sourceMap',
-            '3.watch的用法',
-            '4.小插件应用',
-            '5.webpack跨域问题',
-            '6.resolve属性的配置',
-            '7.定义环境变量',
-            '8.区分不同环境'
-          ],
-          '/base/plugin/': [
-            '1.index',
-            '2.plugin',
-            '3.document',
-            '4.inline',
-            '5.auto'
-          ],
-          '/base/loader/': [
-            '1.index',
-            '1.loader',
-            '2.deploy',
-            '3.babel',
-            '4.banner',
-            '5.file-url',
-            '6.less-css',
-            '7.css'
-          ],
-          '/base/optimize/': [
-            '1.noParse',
-            '2.lgnorePlugin',
-            '3.dllPlugin',
-            '4.happypack',
-            '5.webpack自带优化',
-            '6.抽离公共代码',
-            '7.懒加载',
-            '8.热更新',
-            '9.热模块替换',
-            '11.optimization'
-          ],
-          '/senior/loader/': [
-            '1.index'
-          ],
-          '/senior/plugin/': [
-            '1.index',
-            '2.extend',
-            '3.componentCommunication',
-            '4.render',
-            '5.api',
-            '6.form',
-            '7.checkBox',
-            '8.active',
-            '9.alert',
-            '10.table',
-            '11.tree'
-          ],
-          '/senior/tapable/': [
-            '1.index',
-            '2.SyncHook',
-            '3.SyncBailHook',
-            '4.SyncWaterfallHook',
-            '5.SyncLoopHook',
-            '6.AsyncParallelHook',
-            '7.AsyncParallelBailHook',
-            '8.AsyncSeriesHook',
-            '9.AsyncSeriesBailHook',
-            '10.AsyncSeriesWaterfallHook'
-          ],
-          '/senior/write/': [
-            '1.writeByHand',
-            '2.analyse',
-            '3.relation',
-            '4.ast',
-            '5.build',
-            '6.loader',
-            '7.plugins'
-          ],
-          '/source/webpack/': [
-            '1.index',
-            '1.webpack',
-            '2.options',
-            '3.compiler',
-            '4.plugin',
-            '5.compiler',
-            '6.run',
-            '7.compile',
-            '8.compilation',
-            '9.make',
-            '10._addModuleChain',
-            '11.seal',
-            '12.chunk',
-            '13.onCompiled'
-          ]
-        }
-      }
-    }
+  head: [
+    ['link', { rel: 'icon', href: '/home.svg' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ["script", { src: "/dll/vendor.dll.js" }],
+    [
+      "script",
+      {
+        src: "https://webapi.amap.com/maps?v=2.0&key=46c9ed4e2d25a0e0ee7c883fd5b1a0c8",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://webapi.amap.com/ui/1.1/main.js?v=1.1.1",
+      },
+    ],
+  ],
+  define: {
+    env: {
+      NODE_ENV: process.env.NODE_ENV,
+    },
   },
-}
+  beforeDevServer(app, server, compiler) {
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: false }));
+    httpRequest(app);
+  },
+  alias: {
+    mock: path.resolve(__dirname, "../../mock/"),
+    "@": path.resolve(__dirname, "../../src/"),
+  },
+  postcss: {
+    plugins: [require("autoprefixer")],
+  },
+  stylus: { preferPathResolver: "webpack" },
+  less: {},
+  scss: {
+    data: `
+    @import "~@/assets/style/var.scss";
+    @import "~@/assets/style/variables.scss";
+    @import "~@/assets/style/reset.scss";
+    @import "~@/assets/style/mixins.scss";
+    `,
+  },
+  sass: { indentedSyntax: true },
+  dest: "web-webpack", // 指定 vuepress 的输出目录
+  markdown: {
+    toc: { includeLevel: [2, 3] },
+    lineNumbers: true, // 代码块显示行号
+  },
+  plugins: [
+    // 设置环境变量
+    new Webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: "'production'",
+        BASE_API: "'/'",
+      },
+    }),
+    new Webpack.DllReferencePlugin({
+      manifest: require(path.resolve(
+        __dirname,
+        "public/dll/vendor-manifest.json"
+      )),
+      name: "[name]_[hash]",
+      context: process.cwd(),
+    }),
+    [require("./demo-preview")],
+    [
+      "vuepress-plugin-anchor-toc",
+      {
+        showDepth: 1,
+        customClass: "your-customClass",
+        ignore: ["/", "/api/"],
+      },
+    ],
+    ['fulltext-search'],
+    // 只要把这个放进 config的plugins中就可以了
+    [
+      "sakura",
+      {
+        num: 20, // 默认数量
+        show: true, //  是否显示
+        zIndex: -1, // 层级
+        img: {
+          replace: false, // false 默认图 true 换图 需要填写httpUrl地址
+          httpUrl: "...", // 绝对路径
+        },
+      },
+    ],
+    [
+      // 名称：@vuepress/plugin-pwa 网页内容有更新的时候有刷新按钮。可以把网页保存到桌面，当一个app一样
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "有新的内容更新",
+          buttonText: "刷新",
+        },
+      },
+    ],
+    [
+      "copyright",
+      {
+        authorName: "zhoubichuan@icloud.com", // 选中的文字将无法被复制
+        minLength: 30, // 如果长度超过  30 个字符
+      },
+    ],
+    // [
+    //   "vuepress-plugin-nuggets-style-copy",
+    //   {
+    //     copyText: "复制代码",
+    //     tip: {
+    //       content: "复制成功",
+    //     },
+    //   },
+    // ],
+    ["@vuepress/back-to-top"],
+    ["@vuepress/medium-zoom"],
+    ["@vuepress/nprogress"],
+    [
+      // 名称：@vuepress/plugin-active-header-links 效果：页面滚动时自动激活侧边栏链接的插件，效果就是右边内容滚动的时候，看到哪里了，左侧菜单会自动高亮显示当前看的目录。
+      "@vuepress/active-header-links",
+      {
+        sidebarLinkSelector: ".sidebar-link",
+        headerAnchorSelector: ".header-anchor",
+      },
+    ],
+    [
+      "@vssue/vuepress-plugin-vssue",
+      {
+        platform: "github", //v3的platform是github，v4的是github-v4
+        locale: "zh", //语言
+        // 其他的 Vssue 配置
+        owner: "zhoubichuan", //github账户名
+        repo: "web-webpack", //github一个项目的名称
+        clientId: "Iv1.2923ba5d4de48a3c", //注册的Client ID
+        clientSecret: "110210", //注册的Client Secret
+        autoCreateIssue: true, // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了
+      },
+    ],
+    ["vuepress-plugin-boxx"],
+  ],
+  // 主题配置
+  themeConfig: {
+    repo: "https://github.com/zhoubichuan/web-webpack", // 源码地址
+    repoLabel: "查看源码", // (查看源码的)组件名称
+    docsBranch: "master", // git 源仓库 仓库分支
+    editLinks: true, // 编辑链接
+    docsDir: "src", // 假如文档不是放在仓库的根目录下
+    editLinkText: "在github上编辑此页",
+    sidebarDepth: 2,
+    lastUpdated: "上次更新", // 获取每个文件最后一次 git 提交的时间戳
+    nav: require("./nav.js"),
+    sidebar: require("./sidebar.js"),
+    searchMaxSuggestoins: 10,
+  },
+};
