@@ -102,6 +102,38 @@ const sidebar = {
     '11.seal',
     '12.chunk',
     '13.onCompiled'
+  ],
+  '/source/loader/': [
+    '1.index',
+    '1.webpack',
+    '2.options',
+    '3.compiler',
+    '4.plugin',
+    '5.compiler',
+    '6.run',
+    '7.compile',
+    '8.compilation',
+    '9.make',
+    '10._addModuleChain',
+    '11.seal',
+    '12.chunk',
+    '13.onCompiled'
+  ],
+  '/source/plugin/': [
+    '1.index',
+    '1.webpack',
+    '2.options',
+    '3.compiler',
+    '4.plugin',
+    '5.compiler',
+    '6.run',
+    '7.compile',
+    '8.compilation',
+    '9.make',
+    '10._addModuleChain',
+    '11.seal',
+    '12.chunk',
+    '13.onCompiled'
   ]
 };
 module.exports = sidebar;
