@@ -11,7 +11,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "16.5.0"
+          node-version: "14.17.0"
       - name: Install npm dependencies
         run: npm install
       - name: Run build task
@@ -21,7 +21,7 @@ jobs:
         with:
           source: "web-webpack/*"
           host: ${{ secrets.HOST }}
-          target: "/usr/src/zhoubichuan/sit/"
+          target: "/usr/src/zhoubichuan/dev/"
           port:  ${{ secrets.PORT }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
