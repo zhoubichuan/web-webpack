@@ -1,10 +1,10 @@
 {
-    "name": "web-vue2.x",
-    "short_name": "web-vue2.x",
+    "name": "webpack",
+    "short_name": "webpack",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#2196f3",
-    "description": "web-vue2.x主页",
+    "description": "webpack主页",
     "theme_color": "blue",
     "icons": [
       {
